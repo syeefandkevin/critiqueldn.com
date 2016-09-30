@@ -1,0 +1,86 @@
+@import '_settings'
+
+normalize-css()
+base()
+
+$pink = #F0818E
+$blue = #3C59A5
+$green = #98CFB8
+$yellow = #FCF3B0
+$yellow__dark = #E6DA87
+$grey = #dddddd
+
+* 
+  margin 0
+  padding 0
+  box-sizing border-box
+  font-family "Baloo Bhai", sans-serif
+  color $blue
+
+body
+  padding 2em
+  background #FCF3B0
+  display flex
+  min-width 100vw
+  min-height 100vh
+  justify-content center
+  align-items center
+  
+.content
+  width 50vw
+  text-align center
+  padding-bottom 5em
+  
+img.logo
+  width 500px
+  max-width 100%
+  margin 0 auto 2em auto
+  display block
+  
+h3
+  font-weight normal
+  margin-top 1em
+  
+.parachute
+  position absolute
+  height 20vh
+  bottom 0
+  left 0
+  
+a.button
+  display inline-block
+  background $yellow
+  position relative
+  color $blue
+  margin-top 2em
+  padding 0.5em 1em
+  text-decoration none
+  border 2px solid $blue
+  border-radius 0.5em
+  box-shadow 0.25em 0.25em 0 $blue
+  &:hover
+    background $yellow__dark
+  &:active
+    box-shadow 0 0 0 $blue
+    top 0.25em
+    left 0.25em
+    
+.author a
+  margin-left 2em
+  text-decoration none
+  
++below(800px)
+  body
+    align-items flex-start
+    font-size 0.8em
+
+  .content
+    width 90vw
+    
+  a.button
+    display block
+    
+  .author a
+    display block
+    margin-top 2em
+    margin-left 0
