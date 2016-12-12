@@ -179,8 +179,7 @@ html {
   font-size: 100%;
 }
 body {
-  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
-  color: #555;
+  color: white;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -190,12 +189,17 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Baloo Bhai", sans-serif;
-  color: #3c59a5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: white;
 }
 body {
   padding: 2em;
-  background: #fcf3b0;
+  background: #5F2C82;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #5F2C82), color-stop(100%, #3F0B76));
+  background: -webkit-linear-gradient(left, #5F2C82 0%, #3F0B76 100%);
+  background: linear-gradient(to right, #5F2C82 0%, #3F0B76 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,7 +215,6 @@ body {
 .content {
   width: 50vw;
   text-align: center;
-  padding-bottom: 5em;
 }
 img.logo {
   width: 500px;
@@ -223,34 +226,30 @@ h3 {
   font-weight: normal;
   margin-top: 1em;
 }
-.parachute {
-  position: absolute;
-  height: 20vh;
-  bottom: 0;
-  left: 0;
-}
 a.button {
   display: inline-block;
-  background: #fcf3b0;
+  background: transparent;
   position: relative;
-  color: #3c59a5;
+  color: white;
   margin-top: 2em;
   padding: 0.5em 1em;
   text-decoration: none;
-  border: 2px solid #3c59a5;
-  border-radius: 0.5em;
-  box-shadow: 0.25em 0.25em 0 #3c59a5;
+  border: 2px solid white;
+  border-radius: 2px;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
 }
 a.button:hover {
-  background: #e6da87;
+  color: #3F0B76;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  background: white;
 }
-a.button:active {
-  box-shadow: 0 0 0 #3c59a5;
-  top: 0.25em;
-  left: 0.25em;
+.author {
+  margin-left: 2em;
+  text-decoration: none;
 }
 .author a {
-  margin-left: 2em;
   text-decoration: none;
 }
 @media only screen and (max-width: 800px) {
